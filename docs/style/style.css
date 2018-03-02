@@ -7,12 +7,12 @@
     height: 360px;
 }
 
-.item.image {
-    width: 640px;
-    height: 360px;
+#mycarousel {
+    height: 80%;
+    width: 80%
 }
 
-#mycarousel {
-    height: 100%;
-    width: 50%
+#meet {
+    height: 80%;
+    width: 80%;
 }
