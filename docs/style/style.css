@@ -1,3 +1,8 @@
 .button {
     float: left;
 }
+
+.corousel-inner>.item>img {
+    width: 640px;
+    height: 360px;
+}
