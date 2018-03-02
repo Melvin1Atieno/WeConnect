@@ -6,3 +6,13 @@
     width: 640px;
     height: 360px;
 }
+
+.item.image {
+    width: 640px;
+    height: 360px;
+}
+
+#mycarousel {
+    height: 100%;
+    width: 50%
+}
