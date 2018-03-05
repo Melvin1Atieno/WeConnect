@@ -1,18 +1,12 @@
-.button {
-    float: left;
-}
-
-.corousel-inner>.item>img {
-    width: 640px;
-    height: 360px;
-}
-
-#mycarousel {
+.carousel.slide {
     height: 80%;
-    width: 80%
+    background-color: burlywood;
 }
 
-#meet {
-    height: 80%;
-    width: 80%;
+#bbit {
+    height: 640px;
+}
+
+body {
+    background-color: green
 }
