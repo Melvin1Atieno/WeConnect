@@ -1,3 +1,12 @@
-.button {
-    float: left;
+.carousel.slide {
+    height: 80%;
+    background-color: burlywood;
+}
+
+#bbit {
+    height: 640px;
+}
+
+body {
+    background-color: green
 }

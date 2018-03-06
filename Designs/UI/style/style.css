@@ -1,3 +1,21 @@
 .button {
     float: left;
 }
+
+#mycarousel {
+    margin: 100px;
+}
+
+#Cimg {
+    height: 300px;
+}
+
+#weconnect {
+    background-color: goldenrod;
+    height: 600px;
+    margin: 20px;
+}
+
+#search {
+    float: right;
+}
