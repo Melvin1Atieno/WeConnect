@@ -1,12 +1,21 @@
-.carousel.slide {
-    height: 80%;
-    background-color: burlywood;
+.button {
+    float: left;
 }
 
-#bbit {
-    height: 640px;
+#mycarousel {
+    margin: 100px;
 }
 
-body {
-    background-color: green
+#Cimg {
+    height: 300px;
+}
+
+#weconnect {
+    background-color: goldenrod;
+    height: 600px;
+    margin: 20px;
+}
+
+#search {
+    float: right;
 }
