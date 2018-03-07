@@ -33,25 +33,23 @@
                                 <a data-toggle="modal" href="#RModal">Review a business</a>
                             </li>
                             <li>
-                                <a data-toggle="modal" href="#VBModal">View business Profile</a>
+                                <a data-toggle="modal" href="#BLModal">View business Profile</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#BLModal">REGISTERED BUSINESSES</a>
+                        <a data-toggle="modal" href="#BLModal">REGISTERED BUSINESSES</a>
                     </li>
-                    <li>
-                        <div class="dropdown">
-                            <button action="#" class="navbar-form" onclick="myFunction()" role="search">
-              <div class="input-group add-on">
-                <input class="form-control"
-                     id="search"
-                     name="search"
-                     placeholder="search for a business"
-                     type="text">
-                <div class="input-group-btn"></div>
-              </div></button>
+                    <li><form class="navbar-form navbar-left" action="#">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter Business Name">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div> 
                         </div>
+                    </form>
                     </li>
                 </ul>
             </div>
@@ -92,8 +90,9 @@
         <p>We care , We share, We connect<br> Contact us: Email us at melvinatieno@gmail.com</p>
         <div class="modal fade" id="RBModal" role="dialog">
             <div class="modal-dialog">
-                <div class="modal-content">
+                <div class="modal-content" id="modalarea">
                     <div class="modal-header">
+                        <button class="close" data-dismiss="modal" type="button">&times;</button>
                         <h2 class="modal-title">Register</h2>
                     </div>
                     <div class="modal-body">
@@ -127,8 +126,9 @@
         </div>
         <div class="modal fade" id="RModal" role="dialog">
             <div class="modal-dialog">
-                <div class="modal-content">
+                <div class="modal-content" id="modalarea">
                     <div class="modal-header">
+                        <button class="close" data-dismiss="modal" type="button">&times;</button>
                         <h2 class="modal-title">Review</h2>
                     </div>
                     <div class="modal-body">
@@ -149,35 +149,67 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="VBModal" role="dialog">
+        <div class="modal fade" id="BLModal" role="dialog">
             <div class="modal-dialog">
-                <div class="modal-content">
+                <div class="modal-content" id="modalarea">
                     <div class="modal-header">
-                        <h2 class="modal-title">view</h2>
+                        <button class="close" data-dismiss="modal" type="button">&times;</button>
+                        <h2 class="modal-title">REGISTERED BUSINESSES</h2>
                     </div>
                     <div class="modal-body">
-                        <div class="jumbotron">
-                            <h1>WeConnect</h1>
-                            <h2>Tengeneza Furnitures</h2>
-                            <h4>What we do:</h4>
-                            <div class="well well-lg">
-                                <p>Make and refbarish your furniture</p>
-                            </div>
-                            <h4>Stake Holders:</h4>
-                            <div class="well well-lg">
-                                <p>Melvin</p>
-                            </div>
-                            <h4>Find us:</h4>
-                            <div class="well well-lg">
-                                <p>we are located in Kajiado next to wetu shopping centre</p>
-                            </div>
-                            <h4>Contact us:</h4>
-                            <div class="well well-lg"></div>
+                        <ul>
+                            <li>
+                                <a data-toggle="modal" href="#VBModal">Tengeneza Furnitures</a>
+                            </li>
+                            <li>
+                                <a data-toggle="modal" href="#">Tembea Kenya</a>
+                            </li>
+                            <li>
+                                <a data-toggle="modal" href="#">Linet and Friends water company</a>
+                            </li>
+                            <li>
+                                <a data-toggle="modal" href="#">Wisdom Hair saloon</a>
+                            </li>
+                            <li>
+                                <a data-toggle="modal" href="#VBModal">Tengeneza Furnitures</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="VBModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content" id="modalarea">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal" type="button">&times;</button>
+                        <h2 class="modal-title">Business Profile</h2>
+                    </div>
+                    <div class="modal-body">
+                        <h2>Tengeneza Furnitures</h2>
+                        <h4>What we do:</h4>
+                        <div class="well well-lg">
+                            <p>Make and refurbish your furniture</p>
+                        </div>
+                        <h4>Stake Holders:</h4>
+                        <div class="well well-lg">
+                            <p>Melvin</p>
+                        </div>
+                        <h4>Find us:</h4>
+                        <div class="well well-lg">
+                            <p>we are located in Kajiado next to wetu shopping centre</p>
+                        </div>
+                        <h4>Contact us:</h4>
+                        <div class="well well-lg">
                             <p>23415651</p>
                         </div>
+                        <h4>Reviews:</h4>
+                        <p>sharon:<br> The services were great</p>
+                        <p>Wilson:<br> Great work, great services</p>
+                        <p>Mary:<br> Speed and punctuality needs more work, otherwise awesome people</p>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-success" data-dismiss="modal" type="button">Close</button>
+                        <button class="btn btn-danger" data-dismiss="modal" type="button">Remove</button> <button class="btn btn-warning" data-dismiss="modal" type="button">Update</button> <button class="btn btn-success" data-dismiss="modal" type="button">Close</button>
                     </div>
                 </div>
             </div>

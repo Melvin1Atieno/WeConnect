@@ -19,3 +19,13 @@
 #search {
     float: right;
 }
+
+ul {
+    list-style-type: none;
+    color: black;
+}
+
+#modalarea {
+    background-color: goldenrod;
+    font-size: 25px;
+}
