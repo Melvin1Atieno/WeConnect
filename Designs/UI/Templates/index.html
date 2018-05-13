@@ -14,7 +14,7 @@
 </head>
 
 <body>
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-inverse" aria-hidden="false">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Wnavbar">
@@ -67,7 +67,6 @@
                 <li data-target="myCarousel" data-slide-to="1"></li>
                 <li data-target="myCarousel" data-slide-to="2"></li>
                 <li data-target="myCarousel" data-slide-to="3"></li>
-                <li data-target="myCarousel" data-slide-to="4"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
@@ -75,7 +74,7 @@
                     <div class="carousel-caption">
                         <h3>We Connect</h3>
                         <br/>
-                        <button type="button" class="btn btn-default" id="getstarted" href="#signup-modal">Get Started</button>
+                        <button type="button" class="btn btn-default" data-toggle="modal" id="getstarted" href="#signup-modal">Sign Up and Get Started</button>
                     </div>
                 </div>
                 <!--end of active carousel-->
@@ -144,6 +143,41 @@
                 <br> Contact us: Email us at melvinatieno@gmail.com</p>
         </footer>
         <!-- end footer -->
+
+        <!-- start signup-modal -->
+        <div class="modal fade" id="signup-modal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal" type="button">&times;</button>
+                        <h2 class="modal-title">SIGN-UP </h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="jumbotron">
+                            <h1>WeConnect</h1>
+                            <img class="img-responsive" src="../images/build to success.jpg " alt="image of build your business to success">
+                            <form action="#">
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <input type="text" class="form-control" id="username">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" id="password">
+                                </div>
+                                <button type="submit" class="btn btn-success">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end of signup modal -->
         
         <!-- register a business modal start -->
         <div class="modal fade" id="RBModal" role="dialog">
