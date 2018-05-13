@@ -1,3 +1,20 @@
+.navbar .container-fluid .navbar-right li a {
+    color:black;
+}
+.navbar .container-fluid .navbar-right li a:hover {
+    color:black;
+    background-color:white;
+}
+.navbar .container-fluid .navbar-right .active a {
+    background-color:rgb(76, 177, 8);
+    color:black;
+}
+
+
+.navbar .container-fluid .navbar-brand {
+    font-size:250%;
+    color:black;
+}
 .navbar{
     margin-bottom:0!important;
     border-radius:0 !important;
