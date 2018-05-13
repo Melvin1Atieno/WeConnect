@@ -56,6 +56,9 @@
                                 </div>
                             </form>
                         </li>
+                        <li>
+                            <button class="btn btn-info" type="submit" data-toggle="modal" href="#logIn-modal">LogIn</button>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -120,16 +123,18 @@
             <div class="container">
                 <h2>Registered businesses</h2>
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-6" id="mfoods">
                         <img src="../images/foodtruck.jpg" alt="foodtruck" id="registered-business">
                         <h4>Motion foods</h4>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6" id="wfurnitures">
                         <img src="../images/bookshelf.jpg" alt="brown bookshelf" id="registered-business">
                         <h4>Wazalendo furnitures</h4>
                         <p></p>
                     </div>
-                    <div class="col-sm-4">
+                </div>
+                <div class="row">
+                    <div class="col-sm-6" id="phair">
                         <img src="../images/hairsalon.jpg" alt="hair salon signpost" id="registered-business">
                         <h4>perfect hairsalon</h4>
                     </div>
@@ -182,11 +187,44 @@
         </div>
 
         <!-- end of signup modal -->
+
+        <!-- login modal start -->
+        <div class="modal fade" id="logIn-modal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal" type="button">&times;</button>
+                        <h2 class="modal-title">LogIn</h2>
+                    </div>
+                    <div class="modal-body">
+                        
+                            <div class="jumbotron">
+                                <h1>Login</h1>
+                                <form action="#">
+                                    <div class="form-group">
+                                        <label for="email">Email address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email address" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Enter Password" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-success">Submit</button>
+                                </form>
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-danger">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- login modal end -->
         
         <!-- register a business modal start -->
         <div class="modal fade" id="RBModal" role="dialog">
             <div class="modal-dialog">
-                <div class="modal-content" id="modalarea">
+                <div class="modal-content">
                     <div class="modal-header">
                         <button class="close" data-dismiss="modal" type="button">&times;</button>
                         <h2 class="modal-title">Register</h2>
@@ -258,7 +296,7 @@
         <!-- list of registered businesses modal -->
         <div class="modal fade" id="BLModal" role="dialog">
             <div class="modal-dialog">
-                <div class="modal-content" id="modalarea">
+                <div class="modal-content">
                     <div class="modal-header">
                         <button class="close" data-dismiss="modal" type="button">&times;</button>
                         <h2 class="modal-title">REGISTERED BUSINESSES</h2>
@@ -266,13 +304,13 @@
                     <div class="modal-body">
                         <ul>
                             <li>
-                                <a data-toggle="modal" href="#VBModal">wazalendo Furnitures</a>
+                                <a href="#wfurnitures" onclick="$('#BLModal').modal('hide')">wazalendo Furnitures </a>
                             </li>
                             <li>
-                                <a data-toggle="modal" href="#">Motion foods</a>
+                                <a href="#mfoods" onclick="$('#BLModal').modal('hide')">Motion foods</a>
                             </li>
                             <li>
-                                <a data-toggle="modal" href="#">perfect Hair</a>
+                                <a href="#phair" onclick="$('#BLModal').modal('hide')">perfect Hair</a>
                             </li>
                         </ul>
                     </div>
@@ -280,45 +318,6 @@
             </div>
         </div>
         <!-- end of list of registered businesses modal -->
-
-        <!-- view business profile modal -->
-        <div class="modal fade" id="VBModal" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content" id="modalarea">
-                    <div class="modal-header">
-                        <button class="close" data-dismiss="modal" type="button">&times;</button>
-                        <h2 class="modal-title">Business Profile</h2>
-                    </div>
-                    <div class="modal-body">
-                        <h2>Tengeneza Furnitures</h2>
-                        <h4>What we do:</h4>
-                        <div class="well well-lg">
-                            <p>Make and refurbish your furniture</p>
-                        </div>
-                        <h4>Stake Holders:</h4>
-                        <div class="well well-lg">
-                            <p>Melvin</p>
-                        </div>
-                        <h4>Find us:</h4>
-                        <div class="well well-lg">
-                            <p>we are located in Kajiado next to wetu shopping centre</p>
-                        </div>
-                        <h4>Contact us:</h4>
-                        <div class="well well-lg">
-                            <p>23415651</p>
-                        </div>
-                        <h4>Reviews:</h4>
-                        <p>sharon:<br> The services were great</p>
-                        <p>Wilson:<br> Great work, great services</p>
-                        <p>Mary:<br> Speed and punctuality needs more work, otherwise awesome people</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-danger" data-dismiss="modal" type="button">Remove</button> <button class="btn btn-warning" data-dismiss="modal" type="button">Update</button> <button class="btn btn-success" data-dismiss="modal" type="button">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end of view business profile modal -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
